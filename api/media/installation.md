@@ -5,7 +5,7 @@ Requiere Node.js >= 18.0.0.
 ## Instalar vía NPM
 
 ```bash
-npm install @yourorg/weshipyou-sdk
+npm install weshipyou-sdk
 ```
 
 ## Configurar Variables de Entorno
@@ -24,7 +24,7 @@ El SDK requiere credenciales de WeShipYou para operar. Crea un archivo `.env`:
 ## Configuración Básica
 
 ```typescript
-import { bootstrap } from '@yourorg/weshipyou-sdk';
+import { bootstrap } from 'weshipyou-sdk';
 
 // Inicializar el SDK
 const sdk = bootstrap(
