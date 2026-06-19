@@ -1,0 +1,6 @@
+title: WeShipYou SDK Documentation
+description: Enterprise-grade TypeScript SDK for the WeShipYou platform
+theme: null
+markdown: none
+include:
+  - api/
