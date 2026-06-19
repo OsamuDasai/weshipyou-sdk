@@ -1,0 +1,52 @@
+{
+  "name": "weshipyou-sdk",
+  "version": "1.0.0",
+  "description": "TypeScript SDK oficial para la API de WeShipYou — envíos, tarifas, recargas, webhooks y multi-tenancy",
+  "keywords": [
+    "weshipyou",
+    "shipping",
+    "courier",
+    "api",
+    "sdk",
+    "typescript",
+    "multi-tenant",
+    "cqrs"
+  ],
+  "homepage": "https://github.com/OsamuDasai/weshipyou-sdk",
+  "bugs": {
+    "url": "https://github.com/OsamuDasai/weshipyou-sdk/issues"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Dazai Osamu <dazaiosamu.2b2t@gmail.com>",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "weshipyou": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./enterprise": {
+      "types": "./dist/enterprise.d.ts",
+      "import": "./dist/enterprise.mjs",
+      "require": "./dist/enterprise.cjs"
+    }
+  },
+  "files": [
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "commander": "^12.0.0",
+    "zod": "^3.22.4"
+  }
+}
